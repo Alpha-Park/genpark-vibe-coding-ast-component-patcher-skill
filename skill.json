@@ -1,0 +1,39 @@
+{
+  "name": "genpark-vibe-coding-ast-component-patcher-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AST-level React JSX component and Tailwind CSS patcher performing atomic surgical frontend UI mutations.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "vibe-coding",
+  "tags": [
+    "lovable-dev",
+    "bolt-new",
+    "ast-patcher",
+    "react-jsx",
+    "tailwind-css"
+  ],
+  "inputs": {
+    "component_code": {
+      "type": "string"
+    },
+    "patch_directive": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "patch_run_id": {
+      "type": "string"
+    },
+    "jsx_ast_parsed_cleanly": {
+      "type": "boolean"
+    },
+    "tailwind_classes_appended": {
+      "type": "array"
+    },
+    "patch_diff_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
